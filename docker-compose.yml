@@ -69,6 +69,7 @@ services:
       build:
         context: ./php-fpm
         args:
+          - INSTALL_PEAR=${PHP_FPM_INSTALL_PEAR}
           - INSTALL_XDEBUG=${PHP_FPM_INSTALL_XDEBUG}
           - INSTALL_BLACKFIRE=${INSTALL_BLACKFIRE}
           - INSTALL_SOAP=${PHP_FPM_INSTALL_SOAP}
